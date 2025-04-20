@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dine Out - Chezze</title>
+  <link rel="icon" href="logo.png" type="image/png" />
+  <link rel="stylesheet" href="dine.css" />
+  
+</head>
+<body>
+
+  <div class="header">
+    <a href="index.html"><img src="logo.png" alt="Logo" class="logo" /></a>
+
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="Search food or restaurant..." onkeyup="filterFood()" />
+    </div>
+
+    <a class="cart-btn" href="cart.html">
+      🛒 Cart <span class="cart-count" id="cartCount">0</span>
+    </a>
+  </div>
+
+  <div class="food-container" id="foodList">
+    <!-- Food items -->
+    <div class="food-card" data-name="Pizza">
+      <img src="PIZZA.png" alt="Pizza" />
+      <h3>Margherita Pizza</h3>
+      <p>₹299</p>
+      <button onclick="addToCart()">Add to Cart</button>
+    </div>
+
+    <div class="food-card" data-name="Burger">
+      <img src="BURGER.jpg" alt="Burger" />
+      <h3>Cheese Burger</h3>
+      <p>₹149</p>
+      <button onclick="addToCart()">Add to Cart</button>
+    </div>
+
+    <div class="food-card" data-name="Pasta">
+      <img src="white.jpg" alt="Pasta" />
+      <h3>White Sauce Pasta</h3>
+      <p>₹249</p>
+      <button onclick="addToCart()">Add to Cart</button>
+    </div>
+
+    <div class="food-card" data-name="Sushi">
+      <img src="sushi.jpeg" alt="Sushi" />
+      <h3>Veg Sushi</h3>
+      <p>₹349</p>
+      <button onclick="addToCart()">Add to Cart</button>
+    </div>
+
+    <div class="food-card" data-name="Biryani">
+      <img src="Briyani.jpeg" alt="Biryani" />
+      <h3>Chicken Biryani</h3>
+      <p>₹199</p>
+      <button onclick="addToCart()">Add to Cart</button>
+    </div>
+
+    <div class="food-card" data-name="Fries">
+      <img src="Fries.jpg" alt="Fries" />
+      <h3>Peri Peri Fries</h3>
+      <p>₹99</p>
+      <button onclick="addToCart()">Add to Cart</button>
+    </div>
+
+    <div class="food-card" data-name="Noodles">
+      <img src="Nodles.jpeg" alt="Noodles" />
+      <h3>Hakka Noodles</h3>
+      <p>₹179</p>
+      <button onclick="addToCart()">Add to Cart</button>
+    </div>
+
+    <div class="food-card" data-name="Ice Cream">
+      <img src="cream.jpg" alt="Ice Cream" />
+      <h3>Choco Chip Ice Cream</h3>
+      <p>₹89</p>
+      <button onclick="addToCart()">Add to Cart</button>
+    </div>
+
+    <div class="food-card" data-name="Salad">
+      <img src="salad.jpg" alt="Salad" />
+      <h3>Fresh Veg Salad</h3>
+      <p>₹129</p>
+      <button onclick="addToCart()">Add to Cart</button>
+    </div>
+
+    <div class="food-card" data-name="Soup">
+      <img src="soup.jpg" alt="Soup" />
+      <h3>Tomato Soup</h3>
+      <p>₹99</p>
+      <button onclick="addToCart()">Add to Cart</button>
+    </div>
+  </div>
+
+  <script src="dine.js"></script>
+
+</body>
+</html>
