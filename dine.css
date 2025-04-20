@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    background-color: #ff5200;
+    font-family: 'Trebuchet MS', sans-serif;
+    color: white;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #ff5200;
+  }
+
+  .logo {
+    height: 60px;
+  }
+
+  .search-bar {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+
+  .search-bar input {
+    width: 50%;
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: none;
+    font-size: 16px;
+    outline: none;
+  }
+
+  .cart-btn {
+    position: relative;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .cart-count {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background: white;
+    color: black;
+    border-radius: 50%;
+    padding: 3px 8px;
+    font-size: 12px;
+  }
+
+  .food-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 30px;
+  }
+
+  .food-card {
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+
+  .food-card:hover {
+    transform: scale(1.05);
+  }
+
+  .food-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  .food-card button {
+    margin-top: 10px;
+    background-color: #ff5200;
+    color: white;
+    padding: 8px 14px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  @media(max-width: 768px){
+    .search-bar input {
+      width: 80%;
+    }
+
+    .food-card {
+      width: 90%;
+    }
+  }
