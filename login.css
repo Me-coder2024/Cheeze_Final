@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #ff5200, #e04800);
+    overflow: hidden;
+    padding: 20px;
+}
+
+.container {
+    position: relative;
+    width: 400px;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 40px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+h1 {
+    font-size: 28px;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    text-align: left;
+    color: white;
+    margin-top: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.3);
+    color: white;
+    outline: none;
+    transition: 0.3s ease-in-out;
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+input:focus {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: white;
+    border: none;
+    color: #ff5200;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-weight: 600;
+    transition: 0.3s ease-in-out;
+}
+
+button:hover {
+    background: #ff5200;
+    color: white;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.back-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: 2px solid white;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.3s ease-in-out;
+}
+
+.back-btn:hover {
+    background: white;
+    color: #ff5200;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* RESPONSIVE DESIGN */
+@media screen and (max-width: 480px) {
+    .container {
+        width: 100%;
+        padding: 30px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    input, button {
+        font-size: 16px;
+    }
+
+    .back-btn {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}

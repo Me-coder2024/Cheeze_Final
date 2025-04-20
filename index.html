@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chezze</title>
+    <link rel="icon" href="logo.png" type="image/png">
+    <style>
+        body {
+            background-color: #ff5200;
+        }
+        .navigation {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 50px;
+            background-color: #ff5200;
+        }
+        nav {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 15px;
+            align-items: center;
+        }
+        a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 16px;
+        }
+        .app {
+            border: 2px solid white;
+            color: white;
+            padding: 12px 16px;
+            border-radius: 10px;
+        }
+        .Sign {
+            background-color: black;
+            color: white;
+            padding: 12px 26px;
+            border-radius: 10px;
+        }
+        .main {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 100px 0;
+            color: white;
+            font-size: 28px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            text-align: center;
+        } 
+        .search {
+            display: flex;
+            gap: 25px;
+            margin-top: 10px;
+        } 
+        .input-box {
+            display: flex;
+            align-items: center;
+            background: white;
+            border-radius: 15px;
+            padding: 10px 15px;
+            width: 200px;
+            height: 50px;
+            font-size: 16px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        .input-box input {
+            border: none;
+            outline: none;
+            font-size: 16px;
+            margin-left: 8px;
+            width: 100%;
+        }
+        .location-box {
+            width: 220px;
+        }
+        .search-box {
+            width: 300px;
+        }
+        .icon {
+            color: gray;
+        }
+        .contant {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 50px 100px;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .Grocery:hover, .DINEOUT:hover, .delivery:hover {
+            transform: scale(1.1);
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 1024px) {
+            .navigation {
+                padding: 10px 20px;
+            }
+            .navigation img {
+                width: 150px;
+                height: auto;
+            }
+            nav {
+                gap: 10px;
+            }
+            a {
+                font-size: 14px;
+            }
+            .main {
+                padding: 60px 10px;
+                font-size: 24px;
+            }
+            .search {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
+            .input-box {
+                width: 90%;
+            }
+            .contant {
+                justify-content: center;
+                padding: 30px 20px;
+                gap: 15px;
+            }
+            .contant img {
+                width: 80%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .navigation {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                padding: 15px;
+            }
+            nav {
+                flex-direction: column;
+                gap: 10px;
+                margin-top: 10px;
+            }
+            .main {
+                padding: 40px 10px;
+                font-size: 20px;
+            }
+            .search {
+                flex-direction: column;
+                width: 100%;
+            }
+            .input-box {
+                width: 85%;
+            }
+            .contant img {
+                width: 90%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .navigation img {
+                width: 120px;
+            }
+            .main {
+                font-size: 18px;
+                padding: 30px 5px;
+            }
+            .search {
+                width: 100%;
+            }
+            .input-box {
+                width: 95%;
+            }
+            .contant img {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="navigation">
+    <img src="logo.png" alt="Logo Failed" width="200px" height="200px">
+    <nav>
+        <a href="about.html">Cheeze Corporate</a>
+        <a href="partner.html">Partner with us</a>
+        <a class="app" href="app.html">Get the App</a>
+        <a class="Sign" href="login.html">Sign in</a>
+    </nav>
+</div>
+
+<div class="main">
+    <h1 style="margin-bottom: 1px;">Order food & groceries. Discover</h1>
+    <h1 style="margin-bottom: 1px;">best restaurants. Chezze Eat!</h1>
+    <p>Get the best deals on your favorite food</p>
+  
+    <div class="search">
+        <!-- Location Input -->
+        <div class="input-box location-box">
+            <span class="icon">📍</span>
+            <input type="text" placeholder="Enter your delivery location">
+        </div>
+
+        <!-- Search Input -->
+        <div class="input-box search-box">
+            <input type="text" placeholder="Search for restaurants or dishes">
+            <span class="icon">🔍</span>
+        </div>
+    </div>
+</div>
+
+<div class="contant">
+    <div class="delivery">
+        <a href="food.html"><img src="food.png" alt="Food Delivery" style="border-radius: 20px;"></a>
+    </div>
+    <div class="DINEOUT">
+        <a href="dine.html"><img src="DINE.png" alt="Dineout" style="border-radius: 20px;"></a>
+    </div>
+    <div class="Grocery">
+        <a href="genie.html"><img src="genie.png" alt="Grocery" style="border-radius: 20px;"></a>
+    </div>
+</div>
+</body>
+</html>
